@@ -21,7 +21,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// BACKGROUND HEADER //
+// BACKGROUND HEADER//
 function scrollHeader() {
     const header = document.getElementById('header');
     if (this.scrollY >= 100) {
