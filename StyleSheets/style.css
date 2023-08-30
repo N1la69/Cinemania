@@ -113,7 +113,11 @@ img {
 .section {
     padding: 3.5rem 0 2.5rem;
 }
-
+.grid{
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
 .quote_block {
     display: flex;
     flex-direction: column;
@@ -291,14 +295,15 @@ img {
 .explore_container {
     position: relative;
     padding-bottom: 1.5rem;
-    /* background: whitesmoke; */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.664)), url("../Res/expImg1.jpg");
+    background-size: cover;
     margin: var(--mb-1-25) var(--mb-0-5) var(--mb-1-5);
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    row-gap: 1.5rem;
+    row-gap: 2.5rem;
 }
 
 .explore_title {
@@ -381,4 +386,47 @@ img {
 .bts_button{
     background-color: var(--white-color);
     color: var(--first-color-alt);
+}
+
+/********* Music ***********/
+.music_container{
+    position: relative;
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url("../Res/music1.jpg");
+    background-size: cover;
+    background-position: 60%;
+    margin: var(--mb-1-25) var(--mb-0-5) var(--mb-1-5);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1.5rem;
+}
+.music_title {
+    font-size: var(--med-font-size);
+}
+
+.music_description {
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+}
+.music_data {
+    margin: 0 var(--mb-0-5) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+}
+.music_button{
+    background-color: var(--white-color);
+    color: var(--first-color-alt);
+}
+.music_image{
+    margin: 0 var(--mb-0-5) 0;
+    grid-template-rows: repeat(2,1fr);
+}
+.music_img-container{
+    width: 150px;
+    height: 125px;
 }
