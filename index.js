@@ -31,3 +31,25 @@ function scrollHeader() {
     }
 }
 window.addEventListener('scroll', scrollHeader)
+
+// CINEMATICS//
+var items = document.querySelectorAll(".cinematic_item img");
+
+items.forEach((val, index) => {
+    val.src = "./Res/cineImg" + (index+1) + ".jpg";
+})
+
+var tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".cinematics_wrapper",
+        pin: true,
+        scrub: 2,
+        start: "top top",
+        end: "50%+=500px",
+    }
+});
+tl.to(".cinematic_items img", {scale: 1}, 0)
+  .to(".cinematic_items", {scale: 2, rotate: 0}, 0)
+  .to(".cinematics_overlay", {height: "100%"}, .2)
+  .to(".cinematics_data", {scale: 1}, .6)
+  .to(".cinematic_items", {scale: .8, opacity: .2}, .6);

@@ -19,6 +19,7 @@
     --scroll-bar-color: #FFFBE9;
     --scroll-thumb-color: #AD8B73;
     --white-color: #FFF;
+    --black-color: #000;
     --white-color-alt: #B9B9B9;
 
     /* FONTS */
@@ -139,7 +140,7 @@ img {
 .button{
     display: inline-block;
     padding: 12px 15px;
-    width: 60%;
+    width: 200px;
     font-weight: 600;
     font-size: 1.02rem;
     border-radius: 12px;
@@ -429,4 +430,81 @@ img {
 .music_img-container{
     width: 150px;
     height: 125px;
+}
+
+/********* Cinematics ***********/
+.cinematics_container{
+    padding-top: 0;
+    position: relative;
+    padding-bottom: 1.5rem;
+    background: var(--black-color);
+}
+.cinematics_wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.cinematic_items{
+    width: 130%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.cinematic_item{
+    width: 200px;
+    height: 300px;
+    margin: 8px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.cinematic_item:hover{
+    transform: scale(1.05);
+}
+.cinematicImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.4);
+}
+.cinematics_overlay{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.cinematics_data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+    margin: 0 var(--mb-0-5) 0;
+    color: var(--white-color);
+    transform: scale(0);
+}
+.cinematics_title{
+    font-size: var(--med-font-size);
+}
+.cinematics_description{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+}
+.cinematics_button{
+    background-color: var(--white-color);
+    color: var(--first-color-alt);
 }
