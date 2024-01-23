@@ -114,11 +114,13 @@ img {
 .section {
     padding: 3.5rem 0 2.5rem;
 }
-.grid{
+
+.grid {
     display: grid;
     column-gap: 1.5rem;
     row-gap: 1.5rem;
 }
+
 .quote_block {
     display: flex;
     flex-direction: column;
@@ -137,7 +139,7 @@ img {
     font-family: var(--quote-font);
 }
 
-.button{
+.button {
     display: inline-block;
     padding: 12px 15px;
     width: 200px;
@@ -145,6 +147,7 @@ img {
     font-size: 1.02rem;
     border-radius: 12px;
 }
+
 /********* ScrollBar ************/
 ::-webkit-scrollbar {
     width: .4rem;
@@ -384,13 +387,14 @@ img {
     align-items: center;
     row-gap: 1.9rem;
 }
-.bts_button{
+
+.bts_button {
     background-color: var(--white-color);
     color: var(--first-color-alt);
 }
 
 /********* Music ***********/
-.music_container{
+.music_container {
     position: relative;
     padding-bottom: 1.5rem;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url("../Res/music1.jpg");
@@ -404,6 +408,7 @@ img {
     text-align: center;
     row-gap: 1.5rem;
 }
+
 .music_title {
     font-size: var(--med-font-size);
 }
@@ -412,6 +417,7 @@ img {
     font-size: var(--h3-font-size);
     font-weight: 600;
 }
+
 .music_data {
     margin: 0 var(--mb-0-5) 0;
     display: flex;
@@ -419,34 +425,39 @@ img {
     align-items: center;
     row-gap: 2.5rem;
 }
-.music_button{
+
+.music_button {
     background-color: var(--white-color);
     color: var(--first-color-alt);
 }
-.music_image{
+
+.music_image {
     margin: 0 var(--mb-0-5) 0;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-.music_img-container{
+
+.music_img-container {
     width: 150px;
     height: 125px;
 }
 
 /********* Cinematics ***********/
-.cinematics_container{
+.cinematics_container {
     padding-top: 0;
     position: relative;
     padding-bottom: 1.5rem;
     margin: var(--mb-1-25) var(--mb-0-5) var(--mb-1-5);
     background: var(--black-color);
 }
-.cinematics_wrapper{
+
+.cinematics_wrapper {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
-.cinematic_items{
+
+.cinematic_items {
     width: 130%;
     display: flex;
     flex-wrap: wrap;
@@ -455,25 +466,29 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
-.cinematic_item{
+
+.cinematic_item {
     width: 200px;
     height: 300px;
     margin: 8px;
     overflow: hidden;
     transition: all .3s ease;
 }
-.cinematic_item:hover{
+
+.cinematic_item:hover {
     transform: scale(1.05);
 }
-.cinematicImg{
+
+.cinematicImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transform: scale(1.4);
 }
-.cinematics_overlay{
+
+.cinematics_overlay {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -487,7 +502,8 @@ img {
     justify-content: center;
     overflow: hidden;
 }
-.cinematics_data{
+
+.cinematics_data {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -498,63 +514,77 @@ img {
     color: var(--white-color);
     transform: scale(0);
 }
-.cinematics_title{
+
+.cinematics_title {
     font-size: var(--med-font-size);
 }
-.cinematics_description{
+
+.cinematics_description {
     font-size: var(--h3-font-size);
     font-weight: 500;
 }
-.cinematics_button{
+
+.cinematics_button {
     background-color: var(--white-color);
     color: var(--first-color-alt);
 }
 
 /********* MovieMarathons ***********/
-.movie_container{
+.movie_container {
     position: relative;
     margin: var(--mb-1-25) var(--mb-0-5) var(--mb-1-5);
     padding-bottom: 1.5rem;
     height: 75vh;
-    background: var(--black-color);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(/Res/mM1.jpg);
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
-.mM_data{
+
+.mM_data {
     margin: 0 var(--mb-0-5) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
 }
-.mM_title{
+
+.mM_title {
     font-size: var(--med-font-size);
+    color: var(--white-color);
 }
-.mM_description{
+
+.mM_description {
     font-size: var(--h3-font-size);
     font-weight: 600;
 }
-.mM_button{
+
+.mM_button {
     background-color: var(--white-color);
     color: var(--first-color-alt);
 }
-.mM_sec{
+
+.mM_sec {
     padding-top: var(--mb-2-5);
     margin: 0 auto;
     height: auto;
     position: relative;
     width: 95%;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "a b c"
         "d e f";
     row-gap: 1rem;
     place-items: center;
 }
-.mM_item{
+
+.mM_item {
     width: 100px;
     height: 150px;
     overflow: hidden;
+    cursor: pointer;
 }
-.mMImg{
+
+.mMImg {
     object-fit: cover;
 }

@@ -21,7 +21,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// BACKGROUND HEADER//
+// BACKGROUND HEADER //
 function scrollHeader() {
     const header = document.getElementById('header');
     if (this.scrollY >= 100) {
@@ -32,11 +32,11 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-// CINEMATICS//
+// CINEMATICS //
 var items = document.querySelectorAll(".cinematic_item img");
 
 items.forEach((val, index) => {
-    val.src = "./Res/cineImg" + (index+1) + ".jpg";
+    val.src = "./Res/cineImg" + (index + 1) + ".jpg";
 })
 
 var tl = gsap.timeline({
@@ -48,8 +48,29 @@ var tl = gsap.timeline({
         end: "50%+=500px",
     }
 });
-tl.to(".cinematic_items img", {scale: 1}, 0)
-  .to(".cinematic_items", {scale: 2, rotate: 0}, 0)
-  .to(".cinematics_overlay", {height: "100%"}, .2)
-  .to(".cinematics_data", {scale: 1}, .6)
-  .to(".cinematic_items", {scale: .8, opacity: .2}, .6);
+tl.to(".cinematic_items img", { scale: 1 }, 0)
+    .to(".cinematic_items", { scale: 2, rotate: 0 }, 0)
+    .to(".cinematics_overlay", { height: "100%" }, .2)
+    .to(".cinematics_data", { scale: 1 }, .6)
+    .to(".cinematic_items", { scale: .8, opacity: .2 }, .6);
+
+
+// MOVIE MARATHONS //
+function bg1() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM1.jpg') center center / cover";
+}
+function bg2() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM2.jpg') center center / cover";
+}
+function bg3() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM3.jpg') center center / cover";
+}
+function bg4() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM4.jpg') center center / cover";
+}
+function bg5() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM5.jpg') center center / cover";
+}
+function bg6() {
+    document.querySelector('.movie_container').style.background = "linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('./Res/mM6.jpg') center center / cover";
+}
