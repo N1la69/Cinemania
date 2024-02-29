@@ -183,11 +183,17 @@ img {
 .nav_logo {
     align-items: center;
     margin-top: var(--mb-0-25);
+    display: flex;
 }
 
 .nav_logo img {
-    width: 8.5rem;
-    height: 2.2rem;
+    width: 55px;
+    height: 45px;
+}
+
+.nav_logo .logo_title{
+    padding-top: var(--mb-0-25);
+    margin-left: 0;
 }
 
 .nav_toggle {
